@@ -1,0 +1,15 @@
+name: My ShellScript Workflow
+
+on: push
+
+jobs:
+    first_job: 
+        runs-on: ubuntu-latest
+        
+        steps:
+         - name: Checkout Repo
+           uses: actions/checkout@v4
+
+         - name: Shell script to displau welcome message and read file
+           run: | 
+            ./display.sh 
