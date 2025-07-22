@@ -10,6 +10,8 @@ jobs:
          - name: Checkout Repo
            uses: actions/checkout@v4
 
+         - name: checking display shell
+           uses: grep -i display.sh  
+
          - name: Shell script to displau welcome message and read file
-           run: | 
-            ./display.sh 
+           run: ./display.sh 
