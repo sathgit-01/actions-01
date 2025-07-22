@@ -3,7 +3,7 @@ name: My ShellScript Workflow
 on: push
 
 jobs:
-    first_job: 
+    script_job: 
         runs-on: ubuntu-latest
         
         steps:
